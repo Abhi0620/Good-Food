@@ -1,0 +1,454 @@
+/*------------- Global ----------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+ul {
+    list-style: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+li {
+    list-style: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/*--------------- Navigation Bar ---------------*/
+
+.nav-bar {
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .50s ease;
+    background-color: white;
+    z-index: 999;
+}
+.nav-bar h1 {
+    font-size: 2.5em;
+    margin-left: 3vw;
+}
+span {
+    color: #f9bc02;
+}
+.nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 4vw;
+    margin-right: 3vw;
+}
+.nav-bar li {
+
+}
+.nav-bar a {
+    font-size: 1.6em;
+}
+
+
+
+/*--------------- Home Section ---------------*/
+
+
+.home-page {
+    width: 100vw;
+    height: calc(60vh - 70px);
+    display: flex;
+    
+}
+.home-page h1 {
+    font-size: 4em;
+}
+.home-page p {
+    font-size: 1.1em;
+}
+.home-part1 {
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    justify-content: center;
+}
+.home-pr1-part1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home-pr1-part2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.home-pr1-part2 p:nth-child(1) {
+    margin-right: 5vw;
+}
+.home-pr1-part2 p:nth-child(2) {
+    border-left: #f9bc02 solid 5px;
+    padding-left: 3vw;
+    margin-right: 5vw;
+}
+.btn {
+    font-size: 1.1em;
+    padding: 1vh 2vw;
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+
+}
+.home-part2 {
+    width: 40vw;
+    height: 100%;
+    overflow: hidden;
+}
+.home-part2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .50s;
+}
+.home-part2:hover img {
+    scale: 1.2;
+}
+
+.home-part3 {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+.home-p3-part1 {
+    width: 5%;
+    height: 80%;
+    margin-top: 3%;
+}
+.home-p3-part2 {
+    width: 10%;
+    height: 80%;
+    border-left: #f9bc02 solid 5px;
+    margin-top: 3%;
+}
+.home-pr3-part3 {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+
+}
+.home-pr3-part3 h2 {
+    font-size: 2em;
+}
+.home-pr3-part3 p {
+    margin-top: 1vh;
+    font-size: 1.1em;
+
+}
+.home-pr3-part4 {
+    width: 45%;
+    height: 80%;
+    background-color: #efefef;
+    margin-top: 3%;
+}
+
+
+/*--------------- Food Gallery Section ---------------*/
+
+
+
+.foodgallery-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.fg-part1 {
+    width: 95vw;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.fg-box1 {
+    width: 23vw;
+    height: 100%;
+    background-color: blue;
+    overflow: hidden;
+}
+.fg-box1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .50s;
+}
+.fg-box1:hover img {
+    scale: 1.2;
+}
+.fg-part2 {
+    width: 95vw;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.fg-box2 {
+    width: 23vw;
+    height: 100%;
+    background-color: chocolate;
+    overflow: hidden;
+}
+.fg-box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .50s;
+}
+.fg-box2:hover img {
+    scale: 1.2;
+}
+
+
+
+/*--------------- Option Section ---------------*/
+
+
+
+.option-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    gap: 4vw;
+}
+.option-page h3 {
+    font-size: 1.8em;
+    text-align: center;
+}
+.option-part1 {
+    width: 90vw;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    gap: 4vw;
+}
+.op-box1 {
+    width: 30vw;
+    height: 100%;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+.op-box1 img {
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
+    transition: all ease .50s;
+}
+.op-box1:hover img {
+    scale: 1.2;
+}
+.option-part2 {
+    width: 90vw;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    gap: 4vw;
+}
+.op-box2 {
+    width: 30vw;
+    height: 100%;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+.op-box2 img {
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
+    transition: all ease .50s;
+}
+.op-box2:hover img {
+    scale: 1.2;
+}
+
+
+/*--------------- Info Section ---------------*/
+
+
+
+.info-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.info-page h2 {
+    font-size: 2em;
+}
+.info-page p {
+    font-size: 1.1em;
+}
+.info-part1 {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-pr1-part1 {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+}
+.info-pr1-part1 h2 {
+    margin-left: 5vw;
+    margin-right: 8vw;
+}
+.info-pr1-part1 p {
+    margin-left: 5vw;
+    margin-right: 2vw;
+}
+.info-pr1-part1 a {
+    margin-left: 5vw;
+    margin-right: 32.9vw;
+}
+.info-pr1-part2 {
+    width: 50vw;
+    height: 100%;
+    overflow: hidden;
+}
+.info-pr1-part2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease .50s;
+}
+.info-pr1-part2:hover img {
+    scale: 1.2;
+}
+.info-part2 {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-pr2-part1 {
+    width: 50vw;
+    height: 100%;
+    overflow: hidden;
+}
+.info-pr2-part1 img {
+    width: 100%;
+    height: 100%;
+    transition: all ease .50s;
+}
+.info-pr2-part1:hover img {
+    scale: 1.2;
+}
+.info-pr2-part2 {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+}
+.info-pr2-part2 h2 {
+    margin-left: 5vw;
+    margin-right: 15vw;
+}
+.info-pr2-part2 p {
+    margin-left: 5vw;
+    margin-right: 2vw;
+}
+.info-pr2-part2 a {
+    margin-left: 5vw;
+    margin-right: 32.9vw;
+}
+
+
+/*--------------- Contact Section ---------------*/
+
+
+
+.contact-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-part1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+    align-items: center;
+}
+.contact-part1 h3 {
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+.con-pr1-part1 {
+    width: 5%;
+    height: 80%;
+    background-color: white;
+}
+.con-pr1-part2 {
+    width: 10%;
+    height: 80%;
+    border-left: #f9bc02 solid 5px;
+    background-color: white;
+}
+.con-pr1-part3 {
+    width: 40%;
+    height: 80%;
+    background-color: #ffe8e8;
+}
+.con-pr1-part4 {
+    width: 45%;
+    height: 80%;
+    background-color: #efefef;
+}
+.contact-part2 {
+    width: 100%;
+    height: 50%;
+    background-color: aliceblue;
+}   
